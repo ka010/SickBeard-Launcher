@@ -13,7 +13,23 @@
 		4E91A65D13CD7ED200BD3F8D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4E91A65B13CD7ED200BD3F8D /* Credits.rtf */; };
 		4E91A66013CD7ED200BD3F8D /* Sickbeard_LauncherAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E91A65F13CD7ED200BD3F8D /* Sickbeard_LauncherAppDelegate.m */; };
 		4E91A66313CD7ED200BD3F8D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E91A66113CD7ED200BD3F8D /* MainMenu.xib */; };
+		4E91A66F13CD7EF000BD3F8D /* ConnectionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E91A66E13CD7EF000BD3F8D /* ConnectionDelegate.m */; };
+		4E91A67613CD806700BD3F8D /* menuicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E91A67413CD806700BD3F8D /* menuicon.png */; };
+		4E91A67713CD806700BD3F8D /* menuicon_bw.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E91A67513CD806700BD3F8D /* menuicon_bw.png */; };
+		4E91A69513CDA44E00BD3F8D /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4E91A69413CDA44E00BD3F8D /* icon.icns */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4E91A67213CD7F0F00BD3F8D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4E91A64813CD7ED200BD3F8D /* Sickbeard Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sickbeard Launcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,14 +37,19 @@
 		4E91A64F13CD7ED200BD3F8D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		4E91A65013CD7ED200BD3F8D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		4E91A65113CD7ED200BD3F8D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		4E91A65413CD7ED200BD3F8D /* Sickbeard Launcher-Info.plist */ = {isa = PBXFileReference; path = "Sickbeard Launcher-Info.plist"; sourceTree = "<group>"; };
+		4E91A65413CD7ED200BD3F8D /* Sickbeard Launcher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sickbeard Launcher-Info.plist"; sourceTree = "<group>"; };
 		4E91A65613CD7ED200BD3F8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4E91A65813CD7ED200BD3F8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4E91A65A13CD7ED200BD3F8D /* Sickbeard Launcher-Prefix.pch */ = {isa = PBXFileReference; path = "Sickbeard Launcher-Prefix.pch"; sourceTree = "<group>"; };
+		4E91A65A13CD7ED200BD3F8D /* Sickbeard Launcher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sickbeard Launcher-Prefix.pch"; sourceTree = "<group>"; };
 		4E91A65C13CD7ED200BD3F8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		4E91A65E13CD7ED200BD3F8D /* Sickbeard_LauncherAppDelegate.h */ = {isa = PBXFileReference; path = Sickbeard_LauncherAppDelegate.h; sourceTree = "<group>"; };
+		4E91A65E13CD7ED200BD3F8D /* Sickbeard_LauncherAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sickbeard_LauncherAppDelegate.h; sourceTree = "<group>"; };
 		4E91A65F13CD7ED200BD3F8D /* Sickbeard_LauncherAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sickbeard_LauncherAppDelegate.m; sourceTree = "<group>"; };
 		4E91A66213CD7ED200BD3F8D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4E91A66D13CD7EF000BD3F8D /* ConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionDelegate.h; sourceTree = "<group>"; };
+		4E91A66E13CD7EF000BD3F8D /* ConnectionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionDelegate.m; sourceTree = "<group>"; };
+		4E91A67413CD806700BD3F8D /* menuicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuicon.png; sourceTree = "<group>"; };
+		4E91A67513CD806700BD3F8D /* menuicon_bw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuicon_bw.png; sourceTree = "<group>"; };
+		4E91A69413CDA44E00BD3F8D /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +67,7 @@
 		4E91A63D13CD7ED200BD3F8D = {
 			isa = PBXGroup;
 			children = (
+				4E91A69413CDA44E00BD3F8D /* icon.icns */,
 				4E91A65213CD7ED200BD3F8D /* Sickbeard Launcher */,
 				4E91A64B13CD7ED200BD3F8D /* Frameworks */,
 				4E91A64913CD7ED200BD3F8D /* Products */,
@@ -82,6 +104,8 @@
 		4E91A65213CD7ED200BD3F8D /* Sickbeard Launcher */ = {
 			isa = PBXGroup;
 			children = (
+				4E91A66D13CD7EF000BD3F8D /* ConnectionDelegate.h */,
+				4E91A66E13CD7EF000BD3F8D /* ConnectionDelegate.m */,
 				4E91A65E13CD7ED200BD3F8D /* Sickbeard_LauncherAppDelegate.h */,
 				4E91A65F13CD7ED200BD3F8D /* Sickbeard_LauncherAppDelegate.m */,
 				4E91A66113CD7ED200BD3F8D /* MainMenu.xib */,
@@ -93,6 +117,8 @@
 		4E91A65313CD7ED200BD3F8D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4E91A67413CD806700BD3F8D /* menuicon.png */,
+				4E91A67513CD806700BD3F8D /* menuicon_bw.png */,
 				4E91A65413CD7ED200BD3F8D /* Sickbeard Launcher-Info.plist */,
 				4E91A65513CD7ED200BD3F8D /* InfoPlist.strings */,
 				4E91A65813CD7ED200BD3F8D /* main.m */,
@@ -112,6 +138,7 @@
 				4E91A64413CD7ED200BD3F8D /* Sources */,
 				4E91A64513CD7ED200BD3F8D /* Frameworks */,
 				4E91A64613CD7ED200BD3F8D /* Resources */,
+				4E91A67213CD7F0F00BD3F8D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -152,6 +179,9 @@
 				4E91A65713CD7ED200BD3F8D /* InfoPlist.strings in Resources */,
 				4E91A65D13CD7ED200BD3F8D /* Credits.rtf in Resources */,
 				4E91A66313CD7ED200BD3F8D /* MainMenu.xib in Resources */,
+				4E91A67613CD806700BD3F8D /* menuicon.png in Resources */,
+				4E91A67713CD806700BD3F8D /* menuicon_bw.png in Resources */,
+				4E91A69513CDA44E00BD3F8D /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +194,7 @@
 			files = (
 				4E91A65913CD7ED200BD3F8D /* main.m in Sources */,
 				4E91A66013CD7ED200BD3F8D /* Sickbeard_LauncherAppDelegate.m in Sources */,
+				4E91A66F13CD7EF000BD3F8D /* ConnectionDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,9 +276,14 @@
 		4E91A66713CD7ED200BD3F8D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sickbeard Launcher/Sickbeard Launcher-Prefix.pch";
 				INFOPLIST_FILE = "Sickbeard Launcher/Sickbeard Launcher-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -256,9 +292,14 @@
 		4E91A66813CD7ED200BD3F8D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sickbeard Launcher/Sickbeard Launcher-Prefix.pch";
 				INFOPLIST_FILE = "Sickbeard Launcher/Sickbeard Launcher-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
