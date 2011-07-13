@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E91A64D13CD7ED200BD3F8D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E91A64C13CD7ED200BD3F8D /* Cocoa.framework */; };
+		4E91A65713CD7ED200BD3F8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4E91A65513CD7ED200BD3F8D /* InfoPlist.strings */; };
+		4E91A65913CD7ED200BD3F8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E91A65813CD7ED200BD3F8D /* main.m */; };
+		4E91A65D13CD7ED200BD3F8D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4E91A65B13CD7ED200BD3F8D /* Credits.rtf */; };
+		4E91A66013CD7ED200BD3F8D /* Sickbeard_LauncherAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E91A65F13CD7ED200BD3F8D /* Sickbeard_LauncherAppDelegate.m */; };
+		4E91A66313CD7ED200BD3F8D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E91A66113CD7ED200BD3F8D /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4E91A64813CD7ED200BD3F8D /* Sickbeard Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sickbeard Launcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E91A64C13CD7ED200BD3F8D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4E91A64F13CD7ED200BD3F8D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4E91A65013CD7ED200BD3F8D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4E91A65113CD7ED200BD3F8D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4E91A65413CD7ED200BD3F8D /* Sickbeard Launcher-Info.plist */ = {isa = PBXFileReference; path = "Sickbeard Launcher-Info.plist"; sourceTree = "<group>"; };
+		4E91A65613CD7ED200BD3F8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4E91A65813CD7ED200BD3F8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4E91A65A13CD7ED200BD3F8D /* Sickbeard Launcher-Prefix.pch */ = {isa = PBXFileReference; path = "Sickbeard Launcher-Prefix.pch"; sourceTree = "<group>"; };
+		4E91A65C13CD7ED200BD3F8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		4E91A65E13CD7ED200BD3F8D /* Sickbeard_LauncherAppDelegate.h */ = {isa = PBXFileReference; path = Sickbeard_LauncherAppDelegate.h; sourceTree = "<group>"; };
+		4E91A65F13CD7ED200BD3F8D /* Sickbeard_LauncherAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sickbeard_LauncherAppDelegate.m; sourceTree = "<group>"; };
+		4E91A66213CD7ED200BD3F8D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E91A64513CD7ED200BD3F8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E91A64D13CD7ED200BD3F8D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E91A63D13CD7ED200BD3F8D = {
+			isa = PBXGroup;
+			children = (
+				4E91A65213CD7ED200BD3F8D /* Sickbeard Launcher */,
+				4E91A64B13CD7ED200BD3F8D /* Frameworks */,
+				4E91A64913CD7ED200BD3F8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4E91A64913CD7ED200BD3F8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E91A64813CD7ED200BD3F8D /* Sickbeard Launcher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E91A64B13CD7ED200BD3F8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E91A64C13CD7ED200BD3F8D /* Cocoa.framework */,
+				4E91A64E13CD7ED200BD3F8D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E91A64E13CD7ED200BD3F8D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E91A64F13CD7ED200BD3F8D /* AppKit.framework */,
+				4E91A65013CD7ED200BD3F8D /* CoreData.framework */,
+				4E91A65113CD7ED200BD3F8D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		4E91A65213CD7ED200BD3F8D /* Sickbeard Launcher */ = {
+			isa = PBXGroup;
+			children = (
+				4E91A65E13CD7ED200BD3F8D /* Sickbeard_LauncherAppDelegate.h */,
+				4E91A65F13CD7ED200BD3F8D /* Sickbeard_LauncherAppDelegate.m */,
+				4E91A66113CD7ED200BD3F8D /* MainMenu.xib */,
+				4E91A65313CD7ED200BD3F8D /* Supporting Files */,
+			);
+			path = "Sickbeard Launcher";
+			sourceTree = "<group>";
+		};
+		4E91A65313CD7ED200BD3F8D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4E91A65413CD7ED200BD3F8D /* Sickbeard Launcher-Info.plist */,
+				4E91A65513CD7ED200BD3F8D /* InfoPlist.strings */,
+				4E91A65813CD7ED200BD3F8D /* main.m */,
+				4E91A65A13CD7ED200BD3F8D /* Sickbeard Launcher-Prefix.pch */,
+				4E91A65B13CD7ED200BD3F8D /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E91A64713CD7ED200BD3F8D /* Sickbeard Launcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E91A66613CD7ED200BD3F8D /* Build configuration list for PBXNativeTarget "Sickbeard Launcher" */;
+			buildPhases = (
+				4E91A64413CD7ED200BD3F8D /* Sources */,
+				4E91A64513CD7ED200BD3F8D /* Frameworks */,
+				4E91A64613CD7ED200BD3F8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sickbeard Launcher";
+			productName = "Sickbeard Launcher";
+			productReference = 4E91A64813CD7ED200BD3F8D /* Sickbeard Launcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E91A63F13CD7ED200BD3F8D /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 4E91A64213CD7ED200BD3F8D /* Build configuration list for PBXProject "Sickbeard Launcher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4E91A63D13CD7ED200BD3F8D;
+			productRefGroup = 4E91A64913CD7ED200BD3F8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E91A64713CD7ED200BD3F8D /* Sickbeard Launcher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E91A64613CD7ED200BD3F8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E91A65713CD7ED200BD3F8D /* InfoPlist.strings in Resources */,
+				4E91A65D13CD7ED200BD3F8D /* Credits.rtf in Resources */,
+				4E91A66313CD7ED200BD3F8D /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E91A64413CD7ED200BD3F8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E91A65913CD7ED200BD3F8D /* main.m in Sources */,
+				4E91A66013CD7ED200BD3F8D /* Sickbeard_LauncherAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4E91A65513CD7ED200BD3F8D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E91A65613CD7ED200BD3F8D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4E91A65B13CD7ED200BD3F8D /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E91A65C13CD7ED200BD3F8D /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		4E91A66113CD7ED200BD3F8D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E91A66213CD7ED200BD3F8D /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E91A66413CD7ED200BD3F8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4E91A66513CD7ED200BD3F8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4E91A66713CD7ED200BD3F8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sickbeard Launcher/Sickbeard Launcher-Prefix.pch";
+				INFOPLIST_FILE = "Sickbeard Launcher/Sickbeard Launcher-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4E91A66813CD7ED200BD3F8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sickbeard Launcher/Sickbeard Launcher-Prefix.pch";
+				INFOPLIST_FILE = "Sickbeard Launcher/Sickbeard Launcher-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E91A64213CD7ED200BD3F8D /* Build configuration list for PBXProject "Sickbeard Launcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E91A66413CD7ED200BD3F8D /* Debug */,
+				4E91A66513CD7ED200BD3F8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E91A66613CD7ED200BD3F8D /* Build configuration list for PBXNativeTarget "Sickbeard Launcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E91A66713CD7ED200BD3F8D /* Debug */,
+				4E91A66813CD7ED200BD3F8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E91A63F13CD7ED200BD3F8D /* Project object */;
+}
