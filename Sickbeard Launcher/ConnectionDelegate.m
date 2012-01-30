@@ -18,39 +18,34 @@
 	if (self != nil) {
 		self.target = aTarget;
 		self.action = anAction;
-		self._data = [[NSMutableData alloc]init];
+		
 	}
 	return self;
 }
 
 
 -(void) connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
-//	NSLog(@"ConnectionDidFailWithError: %@",error);
 	[[NSNotificationCenter defaultCenter]postNotification:[NSNotification notificationWithName:@"serverUnavailableNotification" object:nil]];
 
 }
 
 -(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSHTTPURLResponse *)response {
-	//	console.log("DidReceiveResponse: "+response )
+    _data = [[NSMutableData alloc]init];
 }
 -(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data{
-	//	 x = [CPData dataWithJSONObject: JSON.parse(data)];
-	//	console.log(@"data: " + data)
-	[self._data appendData:data];
-	//	var _json = JSON.parse(data);
-	//[target performSelector:action withObject:data];
-	
-	
+	[_data appendData:data];
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
 	[self.target performSelector:self.action withObject:self._data];
+    self._data = nil;
 }
 
 
 - (void) dealloc
 {
-	[self._data release];
+    [target release];
+	[_data release];
 	[super dealloc];
 }
 

@@ -324,6 +324,7 @@
 				4E91A66813CD7ED200BD3F8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

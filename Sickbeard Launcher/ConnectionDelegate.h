@@ -19,7 +19,7 @@
 - (id) initWithTarget:(id)aTarget perform:(SEL)anAction;
 
 
-@property (nonatomic,retain)id target;
-@property (nonatomic,assign	)SEL action;
-@property (nonatomic,retain)NSMutableData *_data;
+@property (retain)id target;
+@property (assign)SEL action;
+@property (retain)NSMutableData *_data;
 @end

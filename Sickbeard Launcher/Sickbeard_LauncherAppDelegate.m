@@ -32,21 +32,21 @@
     {
         
         NSArray* files = [openPanel filenames];
-              
-        fileName = [files objectAtIndex:0];
-         NSLog(@"filename: %@",fileName);
         
-         [pathField setStringValue:fileName];
+        fileName = [files objectAtIndex:0];
+        NSLog(@"filename: %@",fileName);
+        
+        [pathField setStringValue:fileName];
         
         [[NSUserDefaults standardUserDefaults]setObject:fileName forKey:@"sickbeardpath"];
         [[NSUserDefaults standardUserDefaults]synchronize];
         
     }
     
-   
+    
     [self.window close];
     
-
+    
 }
 
 
@@ -60,16 +60,16 @@
 -(void)startServer {
     NSString *path = [[[NSUserDefaults standardUserDefaults]stringForKey:@"sickbeardpath"]stringByAppendingPathComponent:@"SickBeard.py"];
     
-    NSArray *args = [NSArray arrayWithObjects:path, nil];
-
-    self.serverTask = [[NSTask alloc]init];
+    NSArray *args = [NSArray arrayWithObjects:path,@"--quiet",@"--daemon", nil];
+    
+    serverTask = [[NSTask alloc]init];
     [self.serverTask setLaunchPath:@"/usr/bin/python"];
     [self.serverTask setArguments:args];
     
     [self.serverTask launch];
-
     
-   }
+    
+}
 
 
 -(void)stopServer {
@@ -77,7 +77,7 @@
         [self.serverTask terminate];
         self.serverTask = nil;
         [statusItem setImage:[NSImage imageNamed:@"menuicon_bw"]];
-
+        
     } 
 }
 
@@ -92,6 +92,7 @@
     NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://localhost:8081"]];
     ConnectionDelegate *_delegate = [[ConnectionDelegate alloc]initWithTarget:self perform:@selector(didGetServerResponse:)];
     [NSURLConnection connectionWithRequest:req delegate:_delegate];
+    [_delegate release];
 }
 
 
@@ -100,8 +101,10 @@
     if ([msg length]>0) {
         NSLog(@"Server OK."); 
         [statusItem setImage:[NSImage imageNamed:@"menuicon"]];
-
+        
     }
+    [msg release];
+    
     
 }
 
@@ -115,8 +118,8 @@
     
     NSLog(@"server unavailable ! \n ");
     [statusItem setImage:[NSImage imageNamed:@"menuicon_bw"]];
-
-
+    
+    
 }
 
 
@@ -137,7 +140,7 @@
 {
     
     
-
+    
     
     // Insert code here to initialize your application
     statusItem = [[[NSStatusBar systemStatusBar]statusItemWithLength:NSVariableStatusItemLength]retain];
@@ -173,7 +176,7 @@
 		[statusMenu removeItem:i];
 	}
 	
-
+    
     
     
 	
@@ -184,9 +187,8 @@
 	//item =[NSMenuItem separatorItem];
 	//[statusMenu addItem:item];
 	
-    NSMenuItem *item = [[NSMenuItem alloc]init];
     
-    item = [[NSMenuItem alloc]init];
+    NSMenuItem *item = [[NSMenuItem alloc]init];
     [item setTitle:@"Open SickBeard"];
 	[item setTag:4];
 	[item setEnabled:YES];
@@ -195,25 +197,26 @@
 	[item release];
     
     [statusMenu addItem:[NSMenuItem separatorItem]];
-
-    	
     
-
+    
+    
+    
     
     //*
 	//* Preferences
 	//*
 	
-     item = [[NSMenuItem alloc]init];
-     [item setTitle:@"Preferences..."];
-     [item setTag:1];
-     [item setEnabled:YES];
-     [item setAction:@selector(handleSystemMenuEvent:)];
-     [statusMenu addItem:item];
-     
+    item = [[NSMenuItem alloc]init];
+    [item setTitle:@"Preferences..."];
+    [item setTag:1];
+    [item setEnabled:YES];
+    [item setAction:@selector(handleSystemMenuEvent:)];
+    [statusMenu addItem:item];
+    [item release];
+    
     [statusMenu addItem:[NSMenuItem separatorItem]];
     
-
+    
 	
     item = [[NSMenuItem alloc]init];
     [item setTitle:@"Start "];
@@ -239,7 +242,7 @@
 	[statusMenu addItem:item];
     [item release];
     
-
+    
 	
 	[statusMenu addItem:[NSMenuItem separatorItem]];
 	
@@ -259,20 +262,20 @@
 
 -(void)handleSystemMenuEvent:(NSMenuItem *)item {
 	switch ([item tag]) {
-		
+            
 		case 1:
 			[self.window makeKeyAndOrderFront:self];
 			
 			break;
 		case 2:
-
+            
 			[self restartServer];
 			break;
 		case 3:
             [self stopServer];
 			exit(0);
 			break;
-        
+            
         case 4:
             [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://localhost:8081"]];
             break;
@@ -285,12 +288,14 @@
             [self stopServer];
             break;
 		default:
-
+            
 			[self updateSystemMenu];
 			break;
 	}
 	
 }
+
+
 
 
 - (void)dealloc {
