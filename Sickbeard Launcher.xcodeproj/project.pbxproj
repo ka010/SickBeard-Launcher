@@ -50,6 +50,7 @@
 		4E91A67413CD806700BD3F8D /* menuicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuicon.png; sourceTree = "<group>"; };
 		4E91A67513CD806700BD3F8D /* menuicon_bw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuicon_bw.png; sourceTree = "<group>"; };
 		4E91A69413CDA44E00BD3F8D /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		4ED8E17A1698902D000134FE /* Sickbeard Launcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Sickbeard Launcher.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +105,7 @@
 		4E91A65213CD7ED200BD3F8D /* Sickbeard Launcher */ = {
 			isa = PBXGroup;
 			children = (
+				4ED8E17A1698902D000134FE /* Sickbeard Launcher.entitlements */,
 				4E91A66D13CD7EF000BD3F8D /* ConnectionDelegate.h */,
 				4E91A66E13CD7EF000BD3F8D /* ConnectionDelegate.m */,
 				4E91A65E13CD7ED200BD3F8D /* Sickbeard_LauncherAppDelegate.h */,
@@ -276,6 +278,8 @@
 		4E91A66713CD7ED200BD3F8D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Sickbeard Launcher/Sickbeard Launcher.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -292,6 +296,8 @@
 		4E91A66813CD7ED200BD3F8D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Sickbeard Launcher/Sickbeard Launcher.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",

@@ -53,7 +53,7 @@
 
 
 
-#pragma mark - Sickbeard Process Wrapper 
+#pragma mark - Sickbeard Process Wrapper
 
 
 
@@ -78,7 +78,7 @@
         self.serverTask = nil;
         [statusItem setImage:[NSImage imageNamed:@"menuicon_bw"]];
         
-    } 
+    }
 }
 
 -(void)restartServer {
@@ -99,7 +99,7 @@
 -(void)didGetServerResponse:(NSData*)data {
     NSString *msg = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
     if ([msg length]>0) {
-        NSLog(@"Server OK."); 
+        NSLog(@"Server OK.");
         [statusItem setImage:[NSImage imageNamed:@"menuicon"]];
         
     }
@@ -141,8 +141,6 @@
     
     
     
-    
-    // Insert code here to initialize your application
     statusItem = [[[NSStatusBar systemStatusBar]statusItemWithLength:NSVariableStatusItemLength]retain];
 	[statusItem setMenu:statusMenu];
 	[statusItem setHighlightMode:YES];
